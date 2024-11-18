@@ -1,14 +1,9 @@
 import Link from "next/link";
-
-export default function Home() {
+export default function Info() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      トップページを表示します。
-      <ul>
-        <li>
-          <Link href={'/info/'}>お知らせ</Link>
-        </li>
-      </ul>
+      お知らせページを表示します。
+        <Link href={'/'}>トップページへ戻る</Link>
     </div>
   );
 }
